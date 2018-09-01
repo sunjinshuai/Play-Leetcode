@@ -26,8 +26,8 @@ int *twoSum(int *nums, int numsSize, int target) {
 }
 
 int main(int argc, const char * argv[]) {
-    int nums[] = {2, 7, 11, 15};
-    int *p = twoSum(nums, 4, 9);
+    int nums[] = {2, 7, 11, 15, 1, 8};
+    int *p = twoSum(nums, 6, 9);
     free(p);
     return 0;
 }
