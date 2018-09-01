@@ -1,12 +1,4 @@
-//
-//  main.m
-//  0001-Two-Sum
-//
-//  Created by sunjinshuai on 2018/8/30.
-//  Copyright © 2018年 sunjinshuai. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int *twoSum(int *nums, int numsSize, int target) {
@@ -34,14 +26,8 @@ int *twoSum(int *nums, int numsSize, int target) {
 }
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        int nums[] = {2, 7, 11, 15};
-        int *p = twoSum(nums, 4, 9);
-        free(p);
-    }
+    int nums[] = {2, 7, 11, 15};
+    int *p = twoSum(nums, 4, 9);
+    free(p);
     return 0;
 }
-
-
-
