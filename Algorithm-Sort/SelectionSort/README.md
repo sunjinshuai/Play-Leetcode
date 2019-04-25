@@ -14,39 +14,48 @@
 
 ### 代码实现
 ```
-- (NSArray *)bubbleSort1WithArray:(NSArray *)unsortArray {
-    NSMutableArray *tempArray = unsortArray.mutableCopy;
-    for (int i = 0; i < tempArray.count; i++) {
-        for (int j = 0; j < tempArray.count; j++) {
-            if ([tempArray[i] integerValue] < [tempArray[j] integerValue]) {
-                [tempArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+- (NSArray *)selectSort1WithArray:(NSArray *)unSelectSortArray {
+    NSMutableArray *tempArray = unSelectSortArray.mutableCopy;
+    for (int i = 0; i < tempArray.count; i ++) {
+        NSInteger min = i;
+        for (int j = i + 1 ; j < tempArray.count ; j ++ ) {
+            if ([tempArray[j] integerValue] < [tempArray[min] integerValue]) {
+                min = j;
             }
         }
+        [tempArray exchangeObjectAtIndex:i withObjectAtIndex:min];
     }
     return tempArray.copy;
 }
 
-- (NSArray *)bubbleSort2WithArray:(NSArray *)unsortArray {
-    NSMutableArray *tempArray = unsortArray.mutableCopy;
-    for (int i = 0; i < tempArray.count; i++) {
-        for (int j = 0; j < tempArray.count - 1 - i; j++) {
-            if ([tempArray[j] integerValue] > [tempArray[j + 1] integerValue]) {
-                NSInteger temp   = [tempArray[j] integerValue];
-                tempArray[j]     = tempArray[j + 1];
-                tempArray[j + 1] = @(temp);
+- (NSArray *)selectSort2WithArray:(NSArray *)unSelectSortArray {
+    NSMutableArray *tempArray = unSelectSortArray.mutableCopy;
+    for (int i = 0; i < tempArray.count; i ++) {
+        NSInteger min = i;
+        for (int j = i + 1 ; j < tempArray.count ; j ++ ) {
+            if ([tempArray[j] integerValue] < [tempArray[min] integerValue]) {
+                min = j;
             }
+        }
+        // 交换数据
+        if (i != min) {
+            NSInteger temp = [tempArray[min] integerValue];
+            tempArray[min] = tempArray[i];
+            tempArray[i] = @(temp);
         }
     }
     return tempArray.copy;
 }
- ```
+```
  
  
 ### 稳定性
-比如，如果 a 原本在 b 前面，排序之后 a 仍然在 b 的前面。冒泡排序是比较两个相邻位置元素的大小，显然不会破坏稳定性。
+选择排序是不稳定的排序方法。（如序列[5， 5， 3]第一次就将第一个[5]与[3]交换，导致第一个5挪动到第二个5后面）。
 
 ### 空间复杂度
-O(1)
+最优的情况下（已经有顺序）复杂度为：O(0) ；最差的情况下（全部元素都要重新排序）复杂度为：O(n )；平均的时间复杂度：O(1)
 
 ### 时间复杂度
-由于是双层 for 循环，所以时间复杂度是 O(n*n)
+选择排序的比较次数与序列的初始排序无关。 假设待排序的序列有 n 个元素，则比较次数总是 [n * (n - 1)]/2。
+而移动次数与序列的初始排序有关。当序列正序时，移动次数最少，为 0。当序列反序时，移动次数最多，为[3n * (n - 1)]/  2。选择排序的最优时间复杂度和最差时间复杂度和平均时间复杂度都为 ：O(n * n)
+
