@@ -10,7 +10,7 @@
 
 
 ### 图示
-![冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/BubbleSort/BubbleSort.gif)
+![冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/SelectionSort/SelectionSort.gif)
 
 ### 代码实现
 ```
