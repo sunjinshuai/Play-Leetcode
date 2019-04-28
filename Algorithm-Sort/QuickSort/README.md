@@ -14,9 +14,10 @@
 * 当 i 、j 终有相遇时，排序完成了。
 
 ### 图示
-![插入排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/InsertionSort/InsertionSort.gif)
+![快速排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/QuickSort/QuickSort.gif)
 
 ### 代码实现
+
 ```
 - (void)quickSortArray:(NSMutableArray *)array withLeftIndex:(NSInteger)leftIndex andRightIndex:(NSInteger)rightIndex {
     // 如果数组长度为0或1时返回
