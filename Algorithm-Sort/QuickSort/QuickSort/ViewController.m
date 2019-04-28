@@ -17,10 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableArray *quickSortArray = @[@16, @1, @2, @9, @7, @12, @5, @3, @8, @13, @10].mutableCopy;
+    NSMutableArray *quickSortArray = @[@16, @1, @2, @9, @7, @16, @12, @5, @9, @3, @8, @13, @10].mutableCopy;
     [self quickSortArray:quickSortArray withLeftIndex:0 andRightIndex:quickSortArray.count - 1];
     
+//    NSArray *tempArray = [self quickSortArray:quickSortArray];
     NSLog(@"%@", quickSortArray);
+}
+
+- (NSArray *)quickSortArray:(NSArray *)array {
+    NSMutableArray *tempArray = array.mutableCopy;
+    for (int i = 0; i < tempArray.count; i++) {
+        NSInteger min = i;
+        for (int j = i; j < tempArray.count; j++) {
+            if ([tempArray[j] integerValue] < [tempArray[min] integerValue]) {
+                min = j;
+            }
+        }
+        NSInteger temp = [tempArray[i] integerValue];
+        tempArray[i] = tempArray[min];
+        tempArray[min] = @(temp);
+    }
+    return tempArray;
 }
 
 - (void)quickSortArray:(NSMutableArray *)array withLeftIndex:(NSInteger)leftIndex andRightIndex:(NSInteger)rightIndex {
