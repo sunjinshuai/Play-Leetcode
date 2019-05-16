@@ -10,7 +10,7 @@
 * 选择下一个有效位执行入桶和出桶的操作；
 
 ### 图示
-![基数排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/RadixSort/RadixSort.png)
+![基数排序](https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/RadixSort/RadixSort.gif)
 
 ### 代码实现
 ```
