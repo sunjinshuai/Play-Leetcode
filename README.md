@@ -1,5 +1,6 @@
 # 📚 Play-Leetcode
 
+### 排序
 | Project | Description | Article |
 |:-------:|:-------:|:------|
 |1、| 冒泡排序是一种简单的排序算法。它重复地遍历要排序的数列，一次比较两个元素，如果前一个元素大于后一个元素，就交换这两个元素的位置，直到没有再需要交换的元素，也就是说该数列已经排序完成。 |[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort)|
@@ -10,4 +11,10 @@
 |6、| 归并排序采用分治法，先把待排序序列拆分成一个个子序列，直到子序列只有一个元素，停止拆分，然后对每个子序列进行边排序边合并。 |[归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)|
 |7、| 桶排序的核心思想是将要排序的数据分到几个有序的桶里，每个桶里的数据再单独进行排序。桶内排完序之后，再把每个桶里的数据按照顺序依次取出，组成的序列就是有序的了。|[桶排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BucketSort)|
 |8、| 核心思想是按顺序遍历待排序数组，根据当前有效位将它们分配到对应桶的队列中，然后选择有效位不断的执行出桶和入桶的操作。|[基数排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/RadixSort)|
+
+### Problems
+| ID | Problem | Java | OC | swift |
+|:-------:|:-------:|:------|:------|:------|
+|020、| https://leetcode-cn.com/problems/valid-parentheses/ ||||
+
 ----------------------------
