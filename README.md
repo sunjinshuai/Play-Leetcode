@@ -13,8 +13,8 @@
 |8、| 核心思想是按顺序遍历待排序数组，根据当前有效位将它们分配到对应桶的队列中，然后选择有效位不断的执行出桶和入桶的操作。|[基数排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/RadixSort)|
 
 ### Problems
-| ID | Problem | Java | OC | swift |
+| ID | Problem | Java | OC | Swift |
 |:-------:|:-------:|:------|:------|:------|
-|020、| https://leetcode-cn.com/problems/valid-parentheses/ ||||
+|020、| https://leetcode-cn.com/problems/valid-parentheses/ | Java | OC | Swift |
 
 ----------------------------
