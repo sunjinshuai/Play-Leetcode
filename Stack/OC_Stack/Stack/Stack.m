@@ -44,7 +44,7 @@ static const int kDefaultCapacity = 4;
     return self;
 }
 
-- (id)popLastObject {
+- (id)popObject {
     id object = [self peek];
     [self.stackArray removeLastObject];
     return object;

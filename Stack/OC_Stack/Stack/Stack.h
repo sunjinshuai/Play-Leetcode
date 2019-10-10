@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithSize:(NSUInteger)size;
 
-- (id)popLastObject;
+- (id)popObject;
 - (void)push:(id)object;
 - (id)peek;
 - (NSInteger)sizeOfStack;
