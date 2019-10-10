@@ -48,7 +48,7 @@
             }
         }
     }
-    return YES;
+    return [stack isEmpty];
 }
 
 - (BOOL)isPairMatch:(NSString *)leftPair rightPair:(NSString *)rightPair {
