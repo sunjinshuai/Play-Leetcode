@@ -15,6 +15,6 @@
 ### Problems
 | ID | Problem | Description | Java | OC | Swift |
 |:-------:|:-------:|:------|:------|:------|:------|
-|020、| https://leetcode-cn.com/problems/valid-parentheses/ | valid-parentheses | Java | OC | Swift |
+|020、| https://leetcode-cn.com/problems/valid-parentheses/ | valid-parentheses[] | Java | OC | Swift |
 
 ----------------------------
