@@ -1,6 +1,11 @@
 # 📚 Play-Leetcode
 
 ### 排序
+
+常见的内部排序算法有：冒泡排序、选择排序、插入排序、快速排序、希尔排序、归并排序、堆排序、基数排序等。
+用一张图概括：
+[排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/sort.png)
+
 | Project | Description | Article |
 |:-------:|:-------:|:------|
 |1、| 冒泡排序是一种简单的排序算法。它重复地遍历要排序的数列，一次比较两个元素，如果前一个元素大于后一个元素，就交换这两个元素的位置，直到没有再需要交换的元素，也就是说该数列已经排序完成。 |[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort)|
