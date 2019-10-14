@@ -4,7 +4,10 @@
 
 常见的内部排序算法有：冒泡排序、选择排序、插入排序、快速排序、希尔排序、归并排序、堆排序、基数排序等。
 用一张图概括：
-![排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/sort.png)
+
+<p align='center'>
+<img src='https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/sort.png'>
+</p>
 
 | Project | Description | Article |
 |:-------:|:-------:|:------|
