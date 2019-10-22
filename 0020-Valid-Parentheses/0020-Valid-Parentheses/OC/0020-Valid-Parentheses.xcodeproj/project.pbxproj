@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68319F8D235EF3D100E7B2F6 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 68319F8C235EF3D100E7B2F6 /* Stack.m */; };
 		683E7019234F3969000F9607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E7018234F3969000F9607 /* AppDelegate.m */; };
 		683E701C234F3969000F9607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E701B234F3969000F9607 /* ViewController.m */; };
 		683E701F234F3969000F9607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683E701D234F3969000F9607 /* Main.storyboard */; };
 		683E7021234F396A000F9607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683E7020234F396A000F9607 /* Assets.xcassets */; };
 		683E7024234F396A000F9607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683E7022234F396A000F9607 /* LaunchScreen.storyboard */; };
 		683E7027234F396A000F9607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E7026234F396A000F9607 /* main.m */; };
-		683E702F234F399C000F9607 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E702E234F399C000F9607 /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68319F8B235EF3D100E7B2F6 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		68319F8C235EF3D100E7B2F6 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		683E7014234F3969000F9607 /* 0020-Valid-Parentheses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0020-Valid-Parentheses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		683E7017234F3969000F9607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		683E7018234F3969000F9607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		683E7023234F396A000F9607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		683E7025234F396A000F9607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		683E7026234F396A000F9607 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		683E702D234F399C000F9607 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = ../../../Stack/OC_Stack/Stack/Stack.h; sourceTree = "<group>"; };
-		683E702E234F399C000F9607 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stack.m; path = ../../../Stack/OC_Stack/Stack/Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				683E7018234F3969000F9607 /* AppDelegate.m */,
 				683E701A234F3969000F9607 /* ViewController.h */,
 				683E701B234F3969000F9607 /* ViewController.m */,
-				683E702D234F399C000F9607 /* Stack.h */,
-				683E702E234F399C000F9607 /* Stack.m */,
+				68319F8B235EF3D100E7B2F6 /* Stack.h */,
+				68319F8C235EF3D100E7B2F6 /* Stack.m */,
 				683E701D234F3969000F9607 /* Main.storyboard */,
 				683E7020234F396A000F9607 /* Assets.xcassets */,
 				683E7022234F396A000F9607 /* LaunchScreen.storyboard */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683E702F234F399C000F9607 /* Stack.m in Sources */,
+				68319F8D235EF3D100E7B2F6 /* Stack.m in Sources */,
 				683E701C234F3969000F9607 /* ViewController.m in Sources */,
 				683E7027234F396A000F9607 /* main.m in Sources */,
 				683E7019234F3969000F9607 /* AppDelegate.m in Sources */,

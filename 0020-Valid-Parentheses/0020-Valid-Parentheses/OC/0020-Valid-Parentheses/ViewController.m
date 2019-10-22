@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     NSString *str1 = @"()";
     NSString *str2 = @"()[]{}";
     NSString *str3 = @"(]";
     NSString *str4 = @"([)]";
-
+    
     NSLog(@"字符串()是否匹配：%d", [self isValid:str1]);
     NSLog(@"字符串()[]{}是否匹配：%d", [self isValid:str2]);
     NSLog(@"字符串(]是否匹配：%d", [self isValid:str3]);
@@ -30,9 +30,6 @@
 }
 
 - (BOOL)isValid:(NSString *)inputStr {
-    if (inputStr.length == 0 || inputStr.length % 2 == 1) {
-        return NO;
-    }
     Stack *stack = [[Stack alloc] initWithSize:10];
     for (int i = 0; i < inputStr.length; i++) {
         unichar tempChar = [inputStr characterAtIndex:i];
@@ -40,6 +37,7 @@
         if ([tempStr isEqualToString:@"("] || [tempStr isEqualToString:@"["] || [tempStr isEqualToString:@"{"]) {
             [stack push:tempStr];
         } else {
+            if (stack.isEmpty) return NO;
             NSString *lastStr = stack.peek;
             if (stack && [self isPairMatch:lastStr rightPair:tempStr]) {
                 [stack popObject];
