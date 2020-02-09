@@ -1,6 +1,6 @@
 public class Main {
 
-    // 时间复杂度 O(N*N)
+    // 时间复杂度 O(2^N)
     public static int fib1(int N) {
         if (N <= 1) return N;
         return fib1(N - 1) + fib1(N - 2);
