@@ -1,9 +1,8 @@
-![](https://img.shields.io/badge/language-C%2B%2B-F14E7E.svg) 
+# 📚 Play-Leetcode
+
 ![](https://img.shields.io/badge/language-Java-B07319.svg)
 ![](https://img.shields.io/badge/language-Swift-ffac45.svg)
 ![](https://img.shields.io/badge/judgement-passing-brightgreen.svg)
-
-# 📚 Play-Leetcode
 
 ### 排序
 
