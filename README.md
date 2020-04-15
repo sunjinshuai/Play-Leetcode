@@ -50,6 +50,9 @@
 0026、[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 [remove-duplicates-from-sorted-array](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)
 
+0066、[加一](https://leetcode-cn.com/problems/plus-one/)
+[plus-one](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)
+
 0509、[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
 [Fibonacci-Number](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number) 
 
