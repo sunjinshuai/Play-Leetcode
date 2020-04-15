@@ -38,13 +38,19 @@
 核心思想是按顺序遍历待排序数组，根据当前有效位将它们分配到对应桶的队列中，然后选择有效位不断的执行出桶和入桶的操作。
 
 ### Algorithm
-1、[两数之和](https://leetcode-cn.com/problems/two-sum/)
+0001、[两数之和](https://leetcode-cn.com/problems/two-sum/)
 [two-sum](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)
 
-20、[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+0007、[整数反转](https://leetcode-cn.com/problems/reverse-integer/)
+[reverse-integer](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)
+
+0020、[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 [valid-parentheses](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses) 
 
-509、[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
+0026、[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+[remove-duplicates-from-sorted-array](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)
+
+0509、[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
 [Fibonacci-Number](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number) 
 
 ----------------------------
