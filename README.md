@@ -13,29 +13,31 @@
 <img src='https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/sort.png'>
 </p>
 
-1、[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort)
-核心思想是冒泡排序是一种简单的排序算法。它重复地遍历要排序的数列，一次比较两个元素，如果前一个元素大于后一个元素，就交换这两个元素的位置，直到没有再需要交换的元素，也就是说该数列已经排序完成。 
+
+## 数据结构
 
 
-2、[选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort)
-核心思想是选择排序是一种简单直观的排序算法，首先在待排序序列中找到最小(大)元素，存放到排序序列的起始位置，然后，再从剩余待排序元素中继续寻找最小(大)元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。
+| 数据结构 | 变种 | 相关题目 | 讲解文章 | 
+|:-------:|:-------|:------|:------|
+|顺序线性表：向量||||
+|单链表|1. 双向链表<br>2. 静态链表<br>3. 对称矩阵<br>4. 稀疏矩阵|||
+|哈希表|1. 散列函数<br>2. 解决碰撞/填充因子<br>|||
+|栈和队列|1. 广义栈<br>2. 双端队列<br>|||
+|队列|1. 链表实现<br>2. 循环数组实现<br>3. 双端队列|||
+|字符串|1. KMP算法<br>2. 有限状态自动机<br>3. 模式匹配有限状态自动机<br>4. BM 模式匹配算法<br>5. BM-KMP 算法<br>6. BF 算法|||
+|树|1. 二叉树<br>2. 并查集<br>3. Huffman 树|||
+|数组实现的堆|1. 极大堆和极小堆<br>2. 极大极小堆<br>3. 双端堆<br>4. d 叉堆|||
+|树实现的堆|1. 左堆<br>2. 扁堆<br>3. 二项式堆<br>4. 斐波那契堆<br>5. 配对堆|||
+|查找|1. 哈希表<br>2. 跳跃表<br>3. 排序二叉树<br>4. AVL 树<br>5. B 树 / B+ 树 / B* 树<br>6. AA 树<br>7. 红黑树<br>8. 排序二叉堆<br>9. Splay 树<br>10. 双链树<br>11. Trie 树<br>12. R 树|||
 
-3、[插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort) 核心思想是插入排序的算法描述是一种简单直观的排序算法。它的工作原理是通过构建有序序列，对于待排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。 
+### 排序算法
 
-4、[快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort)
-核心思想是通过一趟排序将待排序的记录分割成独立的两部分，其中一部分记录的关键字均比另一部分记录的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序的目的。 
 
-5、[希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort)
-核心思想是希尔排序又叫缩小增量排序，将整个待排序的序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。
-
-6、 [归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)
-核心思想是归并排序采用分治法，先把待排序序列拆分成一个个子序列，直到子序列只有一个元素，停止拆分，然后对每个子序列进行边排序边合并。
-
-7、[桶排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BucketSort)
-桶排序的核心思想是将要排序的数据分到几个有序的桶里，每个桶里的数据再单独进行排序。桶内排完序之后，再把每个桶里的数据按照顺序依次取出，组成的序列就是有序的了。
-
-8、[基数排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/RadixSort)
-核心思想是按顺序遍历待排序数组，根据当前有效位将它们分配到对应桶的队列中，然后选择有效位不断的执行出桶和入桶的操作。
+| 算法 | 具体类型 | 相关题目 | 讲解文章 | 
+|:-------:|:-------|:------|:------|
+|排序算法|1. 冒泡排序<br>2. 插入排序<br>3. 选择排序<br>4. 希尔 Shell 排序<br>5. 快速排序<br>6. 归并排序<br>7. 堆排序<br>8. 计数排序<br>9. 基数排序<br>10. 桶排序<br>|||
+|递归与分治||1. 二分搜索/查找||
+|
 
 ### Algorithm
 0001、[两数之和](https://leetcode-cn.com/problems/two-sum/)
