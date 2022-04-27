@@ -37,22 +37,14 @@
 |排序算法|1. 冒泡排序<br>2. 插入排序<br>3. 选择排序<br>4. 希尔 Shell 排序<br>5. 快速排序<br>6. 归并排序<br>7. 堆排序<br>8. 计数排序<br>9. 基数排序<br>10. 桶排序<br>|||
 
 ### Algorithm
-0001、[两数之和](https://leetcode-cn.com/problems/two-sum/)
-[two-sum](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)
 
-0007、[整数反转](https://leetcode-cn.com/problems/reverse-integer/)
-[reverse-integer](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)
-
-0020、[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
-[valid-parentheses](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses) 
-
-0026、[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
-[remove-duplicates-from-sorted-array](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)
-
-0066、[加一](https://leetcode-cn.com/problems/plus-one/)
-[plus-one](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)
-
-0509、[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
-[Fibonacci-Number](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number) 
+| No.    |  Title  |  Solution  |  Acceptance |  Difficulty |  Frequency |
+|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
+|0001|两数之和|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)|48.4%|Easy||
+|0007|整数反转|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)|26.6%|Medium||
+|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|40.9%|Easy||
+|0026|删除排序数组中的重复项|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)|48.6%|Easy||
+|0066|加一|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)|42.7%|Easy||
+|0509|斐波那契数|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number)|68.1%|Easy||
 
 ----------------------------
