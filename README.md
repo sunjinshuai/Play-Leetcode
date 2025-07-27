@@ -38,13 +38,14 @@
 
 ### Algorithm
 
-| No.    |  Title  |  Solution  |  Acceptance |  Difficulty |  Frequency |
+| No.    |  Title  |  Solution  |  Difficulty |
 |:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
-|0001|两数之和|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)|48.4%|Easy||
-|0007|整数反转|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)|26.6%|Medium||
-|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|40.9%|Easy||
-|0026|删除排序数组中的重复项|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)|48.6%|Easy||
-|0066|加一|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)|42.7%|Easy||
-|0509|斐波那契数|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number)|68.1%|Easy||
+|0001|两数之和|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)|Easy|
+|0007|整数反转|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)|Medium|
+|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|Easy||
+|0026|删除排序数组中的重复项|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)|Easy|
+|0066|加一|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)|Easy|
+|0242|Valid Anagram|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0242-Valid Anagram)|Easy|
+|0509|斐波那契数|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number)|Easy|
 
 ----------------------------
