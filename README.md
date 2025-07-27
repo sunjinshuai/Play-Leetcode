@@ -38,14 +38,14 @@
 
 ### Algorithm
 
-| No.    |  Title  |  Solution  |  Difficulty |
-|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
+| No.    | Title | Solution | Difficulty |
+|:------:|:------|:--------:|:----------:|
 |0001|两数之和|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)|Easy|
 |0007|整数反转|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)|Medium|
-|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|Easy||
+|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|Easy|
 |0026|删除排序数组中的重复项|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)|Easy|
 |0066|加一|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)|Easy|
-|0242|Valid Anagram|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0242-Valid Anagram)|Easy|
+|0242|Valid Anagram|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0242-Valid%20Anagram)|Easy|
 |0509|斐波那契数|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number)|Easy|
 
 ----------------------------
