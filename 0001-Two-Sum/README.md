@@ -61,3 +61,5 @@ public static int[] twoSum(int[] nums, int target) {
 ## 源码
 
 [Java](Java/Main.java)
+
+`Main.java` 使用与上文相同的哈希表解法，查找范围包含数组末项。对于 `nums = [2, 7]`、`target = 9`，扫描到 `7` 时会找到已记录的 `2`，返回下标 `[0, 1]`。
