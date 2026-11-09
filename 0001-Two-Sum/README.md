@@ -41,6 +41,8 @@ public int[] twoSum(int[] nums, int target) {
 
 遍历数组时，先查找 `target - nums[i]` 是否已在哈希表中。找到时返回两个下标，否则记录当前值和下标。
 
+先查再存可以避免重复使用同一个下标。例如 `nums = [3, 3]`、`target = 6` 时，遍历到第二个 `3` 才会找到第一个 `3` 的下标，返回 `[0, 1]`。
+
 ```java
 public static int[] twoSum(int[] nums, int target) {
     HashMap<Integer, Integer> map = new HashMap<>();
@@ -60,6 +62,8 @@ public static int[] twoSum(int[] nums, int target) {
 
 ## 源码
 
-[Java](Java/Main.java)
+- [Java](Java/Main.java)
+- [Swift](Swift/Solution.swift)
+- [Dart](Dart/solution.dart)（使用 Dart 3 的 `indexed` 和记录解构）
 
 `Main.java` 使用与上文相同的哈希表解法，查找范围包含数组末项。对于 `nums = [2, 7]`、`target = 9`，扫描到 `7` 时会找到已记录的 `2`，返回下标 `[0, 1]`。
