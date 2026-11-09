@@ -18,6 +18,7 @@ LeetCode 刷题笔记与常见算法示例。题目目录收录题意、示例�
 | 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 源码、题解 |
 | 0028 | [找出字符串中第一个匹配项的下标](0028-Implement-strStr/README.md) | 简单 | Java 源码 |
 | 0035 | [搜索插入位置](0035-Search-Insert-Position/README.md) | 简单 | Java 源码、题解 |
+| 0049 | [字母异位词分组](0049-Group-Anagrams/README.md) | 中等 | Java、Swift、Dart 源码及题解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
 | 0242 | [有效的字母异位词](0242-Valid%20Anagram/README.md) | 简单 | 题解内含 Java 示例 |
@@ -45,7 +46,7 @@ LeetCode 刷题笔记与常见算法示例。题目目录收录题意、示例�
 | 数组 | [Objective-C 数组示例](Array/Array/Array.xcodeproj)、[删除有序数组中的重复项](Array/RemoveDuplicates/removeDuplicates.md) |
 | 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md) |
 | 链表 | [两数相加](0002-Add-Two-Numbers/README.md) |
-| 哈希表 | [两数之和](0001-Two-Sum/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
+| 哈希表 | [两数之和](0001-Two-Sum/README.md)、[字母异位词分组](0049-Group-Anagrams/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
 
 <details>
 <summary>延伸学习主题</summary>
