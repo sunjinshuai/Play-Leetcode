@@ -1,20 +1,27 @@
-# 两数之和
+# 1. 两数之和
 
-给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
+## 题目描述
+
+给定整数数组 `nums` 和目标值 `target`，返回两个数之和等于目标值的元素下标。
 
 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
 
-```
+## 示例
+
+```text
 给定 nums = [2, 7, 11, 15], target = 9
 
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 ```
 
-解题技巧一、暴力法
-两次 for 循环，遍历相邻两个数字之和是否与 target 相等；
+## 解题思路
 
-```
+### 方法一：枚举
+
+用两层循环枚举下标不同的元素对，找到和为 `target` 的一对。
+
+```java
 public int[] twoSum(int[] nums, int target) {
     for (int i = 0; i < nums.length - 1; i++) {
         for (int j = i + 1; j < nums.length; j++) {
@@ -26,15 +33,15 @@ public int[] twoSum(int[] nums, int target) {
     return new int[]{};
 }
 ```
-复杂度分析：
 
-时间复杂度：O(n^2)
-空间复杂度：O(1)
+- 时间复杂度 `O(n²)`
+- 额外空间复杂度 `O(1)`
 
-解题技巧一、一遍哈希表
-一次 for 循环，将数组里面的数字插入到 hashMap 中，然后 target - num[i] 的差值，检查 hashMap 中是否存在对应的数值，如果存在，将其返回。
+### 方法二：哈希表
 
-```
+遍历数组时，先查找 `target - nums[i]` 是否已在哈希表中。找到时返回两个下标，否则记录当前值和下标。
+
+```java
 public static int[] twoSum(int[] nums, int target) {
     HashMap<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < nums.length; i++) {
@@ -47,7 +54,12 @@ public static int[] twoSum(int[] nums, int target) {
     return new int[]{};
 }
 ```
-复杂度分析：
 
-时间复杂度：O(n)
-空间复杂度：O(1)
+- 平均时间复杂度 `O(n)`
+- 额外空间复杂度 `O(n)`
+
+## 源码
+
+[Java](Java/Main.java)
+
+`Main.java` 使用与上文相同的哈希表解法，查找范围包含数组末项。对于 `nums = [2, 7]`、`target = 9`，扫描到 `7` 时会找到已记录的 `2`，返回下标 `[0, 1]`。
