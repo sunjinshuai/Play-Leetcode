@@ -1,69 +1,38 @@
 # 1. 两数之和
 
-## 题目描述
+## 题意与示例
 
-给定整数数组 `nums` 和目标值 `target`，返回两个数之和等于目标值的元素下标。
+给定整数数组 `nums` 和目标值 `target`，返回满足 `nums[i] + nums[j] == target` 的两个不同下标。题目保证恰有一组答案，返回顺序不限。
 
-你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
+| `nums` | `target` | 返回下标 |
+| --- | --- | --- |
+| `[2, 7, 11, 15]` | `9` | `[0, 1]` |
+| `[3, 3]` | `6` | `[0, 1]` |
 
-## 示例
+## 哈希表解法
 
-```text
-给定 nums = [2, 7, 11, 15], target = 9
+从左到右遍历数组，用哈希表记录已经扫描过的元素值及其下标。遍历到下标 `i` 时，当前值需要的补数是 `target - nums[i]`。
 
-因为 nums[0] + nums[1] = 2 + 7 = 9
-所以返回 [0, 1]
-```
+1. 在表里查找补数。如果找到它的下标 `j`，返回 `[j, i]`。
+2. 如果没找到，将当前值和下标写入表，再继续遍历。
 
-## 解题思路
+先查再存保证表中的下标都小于 `i`，所以两个值即使相同，也来自不同位置。对于 `nums = [3, 3]`、`target = 6`，查找过程如下。
 
-### 方法一：枚举
+| 当前下标 | 当前值 | 查找的补数 | 结果 |
+| --- | --- | --- | --- |
+| `0` | `3` | `3` | 表为空，记录 `3 → 0` |
+| `1` | `3` | `3` | 找到下标 `0`，返回 `[0, 1]` |
 
-用两层循环枚举下标不同的元素对，找到和为 `target` 的一对。
+平均时间复杂度为 `O(n)`，额外空间复杂度为 `O(n)`。
 
-```java
-public int[] twoSum(int[] nums, int target) {
-    for (int i = 0; i < nums.length - 1; i++) {
-        for (int j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] == target) {
-                return new int[]{i, j};
-            }
-        }
-    }
-    return new int[]{};
-}
-```
+## 各语言源码
 
-- 时间复杂度 `O(n²)`
-- 额外空间复杂度 `O(1)`
+| 语言 | 遍历方式 | 补数命中条件 |
+| --- | --- | --- |
+| [Java](Java/Main.java) | 用 `for` 循环遍历下标 | `containsKey` 返回 `true` |
+| [Swift](Swift/Solution.swift) | 用 `enumerated()` 取下标和值 | `if let` 成功取出下标 |
+| [Dart](Dart/solution.dart) | 用 `indexed` 和记录解构取下标和值，需要 Dart 3 或更高版本 | 查到的下标不为 `null` |
 
-### 方法二：哈希表
+## 暴力枚举
 
-遍历数组时，先查找 `target - nums[i]` 是否已在哈希表中。找到时返回两个下标，否则记录当前值和下标。
-
-先查再存可以避免重复使用同一个下标。例如 `nums = [3, 3]`、`target = 6` 时，遍历到第二个 `3` 才会找到第一个 `3` 的下标，返回 `[0, 1]`。
-
-```java
-public static int[] twoSum(int[] nums, int target) {
-    HashMap<Integer, Integer> map = new HashMap<>();
-    for (int i = 0; i < nums.length; i++) {
-        int j = target - nums[i];
-        if (map.containsKey(j)) {
-            return new int[]{map.get(j), i};
-        }
-        map.put(nums[i], i);
-    }
-    return new int[]{};
-}
-```
-
-- 平均时间复杂度 `O(n)`
-- 额外空间复杂度 `O(n)`
-
-## 源码
-
-- [Java](Java/Main.java)
-- [Swift](Swift/Solution.swift)
-- [Dart](Dart/solution.dart)（使用 Dart 3 的 `indexed` 和记录解构）
-
-`Main.java` 使用与上文相同的哈希表解法，查找范围包含数组末项。对于 `nums = [2, 7]`、`target = 9`，扫描到 `7` 时会找到已记录的 `2`，返回下标 `[0, 1]`。
+用两层循环枚举所有满足 `i < j` 的下标对，找到 `nums[i] + nums[j] == target` 时返回 `[i, j]`。最坏时间复杂度为 `O(n²)`，额外空间复杂度为 `O(1)`。
