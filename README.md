@@ -1,51 +1,65 @@
-# 📚 Play-Leetcode
+# Play-Leetcode
 
-![](https://img.shields.io/badge/language-Java-B07319.svg)
-![](https://img.shields.io/badge/language-Swift-ffac45.svg)
-![](https://img.shields.io/badge/judgement-passing-brightgreen.svg)
+LeetCode 刷题笔记与常见算法示例。题目目录收录题意、示例及已有题解，排序专题包含图示和 Objective-C 示例。
 
-### 排序
+- [LeetCode 题目索引](#leetcode-题目索引)
+- [排序算法](#排序算法)
+- [数据结构](#数据结构)
 
-常见的内部排序算法有：冒泡排序、选择排序、插入排序、快速排序、希尔排序、归并排序、堆排序、基数排序等。
-用一张图概括：
+## LeetCode 题目索引
 
-<p align='center'>
-<img src='https://github.com/sunjinshuai/Play-Leetcode/blob/master/Algorithm-Sort/sort.png'>
-</p>
+| 题号 | 题目 | 难度 | 仓库内容 |
+| --- | --- | --- | --- |
+| 0001 | [两数之和](0001-Two-Sum/README.md) | 简单 | Java 源码、题解 |
+| 0002 | [两数相加](0002-Add-Two-Numbers/README.md) | 中等 | 题目与示例 |
+| 0007 | [整数反转](0007-Reverse-Integer/README.md) | 中等 | Java 源码 |
+| 0020 | [有效的括号](0020-Valid-Parentheses/README.md) | 简单 | Java 和 Objective-C 源码、题解 |
+| 0026 | [删除有序数组中的重复项](0026-Remove-Duplicates/README.md) | 简单 | Java 源码、题解 |
+| 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 源码、题解 |
+| 0028 | [找出字符串中第一个匹配项的下标](0028-Implement-strStr/README.md) | 简单 | Java 源码 |
+| 0035 | [搜索插入位置](0035-Search-Insert-Position/README.md) | 简单 | Java 源码、题解 |
+| 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
+| 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
+| 0242 | [有效的字母异位词](0242-Valid%20Anagram/README.md) | 简单 | 题解内含 Java 示例 |
+| 0509 | [斐波那契数](0509-Fibonacci-Number/README.md) | 简单 | Java 源码 |
 
+## 排序算法
+
+| 类别 | 文档 |
+| --- | --- |
+| 比较排序 | [冒泡排序](Algorithm-Sort/BubbleSort/README.md) |
+| 比较排序 | [选择排序](Algorithm-Sort/SelectionSort/README.md) |
+| 比较排序 | [插入排序](Algorithm-Sort/InsertionSort/README.md) |
+| 比较排序 | [希尔排序](Algorithm-Sort/ShellSort/README.md) |
+| 比较排序 | [快速排序](Algorithm-Sort/QuickSort/README.md) |
+| 比较排序 | [归并排序](Algorithm-Sort/MergeSort/README.md) |
+| 非比较排序 | [桶排序](Algorithm-Sort/BucketSort/README.md) |
+| 非比较排序 | [基数排序](Algorithm-Sort/RadixSort/README.md) |
+
+![常见排序算法总览](Algorithm-Sort/sort.png)
 
 ## 数据结构
 
+| 主题 | 仓库内容 |
+| --- | --- |
+| 数组 | [Objective-C 数组示例](Array/Array/Array.xcodeproj)、[删除有序数组中的重复项](Array/RemoveDuplicates/removeDuplicates.md) |
+| 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md) |
+| 链表 | [两数相加](0002-Add-Two-Numbers/README.md) |
+| 哈希表 | [两数之和](0001-Two-Sum/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
 
-| 数据结构 | 变种 | 相关题目 | 讲解文章 | 
-|:-------:|:-------|:------|:------|
-|顺序线性表：向量||||
-|单链表|1. 双向链表<br>2. 静态链表<br>3. 对称矩阵<br>4. 稀疏矩阵|||
-|哈希表|1. 散列函数<br>2. 解决碰撞/填充因子<br>|||
-|栈和队列|1. 广义栈<br>2. 双端队列<br>|||
-|队列|1. 链表实现<br>2. 循环数组实现<br>3. 双端队列|||
-|字符串|1. KMP算法<br>2. 有限状态自动机<br>3. 模式匹配有限状态自动机<br>4. BM 模式匹配算法<br>5. BM-KMP 算法<br>6. BF 算法|||
-|树|1. 二叉树<br>2. 并查集<br>3. Huffman 树|||
-|数组实现的堆|1. 极大堆和极小堆<br>2. 极大极小堆<br>3. 双端堆<br>4. d 叉堆|||
-|树实现的堆|1. 左堆<br>2. 扁堆<br>3. 二项式堆<br>4. 斐波那契堆<br>5. 配对堆|||
-|查找|1. 哈希表<br>2. 跳跃表<br>3. 排序二叉树<br>4. AVL 树<br>5. B 树 / B+ 树 / B* 树<br>6. AA 树<br>7. 红黑树<br>8. 排序二叉堆<br>9. Splay 树<br>10. 双链树<br>11. Trie 树<br>12. R 树|||
+<details>
+<summary>延伸学习主题</summary>
 
-### 排序算法
+- 线性表、双向链表、静态链表、对称矩阵和稀疏矩阵。
+- 散列函数、哈希冲突和负载因子。
+- 广义栈、链式队列、循环数组队列和双端队列。
+- BF、KMP、BM、BM-KMP 和基于有限状态自动机的字符串匹配。
+- 二叉树、并查集、哈夫曼树、二叉堆、极大极小堆、双端堆、d 叉堆、左偏堆、斜堆、二项堆、斐波那契堆和配对堆。
+- 跳表、二叉搜索树、AVL 树、B 树及其变体、AA 树、红黑树、伸展树、双链树、Trie 树和 R 树。
+- 堆排序、计数排序。
 
-| 算法 | 具体类型 | 相关题目 | 讲解文章 | 
-|:-------:|:-------|:------|:------|
-|排序算法|1. 冒泡排序<br>2. 插入排序<br>3. 选择排序<br>4. 希尔 Shell 排序<br>5. 快速排序<br>6. 归并排序<br>7. 堆排序<br>8. 计数排序<br>9. 基数排序<br>10. 桶排序<br>|||
+</details>
 
-### Algorithm
+## 许可证
 
-| No.    | Title | Solution | Difficulty |
-|:------:|:------|:--------:|:----------:|
-|0001|两数之和|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0001-Two-Sum)|Easy|
-|0007|整数反转|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0007-Reverse-Integer)|Medium|
-|0020|有效的括号|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0020-Valid-Parentheses)|Easy|
-|0026|删除排序数组中的重复项|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0026-Remove-Duplicates)|Easy|
-|0066|加一|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0066-Plus-One)|Easy|
-|0242|Valid Anagram|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0242-Valid%20Anagram)|Easy|
-|0509|斐波那契数|[java](https://github.com/sunjinshuai/Play-Leetcode/tree/master/0509-Fibonacci-Number)|Easy|
-
-----------------------------
+[MIT](LICENSE)
