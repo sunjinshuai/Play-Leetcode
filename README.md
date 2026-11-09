@@ -2,15 +2,7 @@
 
 从一道题练一种解法。这里收录 LeetCode 刷题笔记、Java / Swift / Dart 题解，以及带图示的 Objective-C 排序和数据结构示例。
 
-[按专题练习](#按专题练习) · [按题号查找](#leetcode-题目索引) · [看排序图解](#排序算法) · [看数据结构示例](#数据结构)
-
-## 按专题练习
-
-| 想练什么 | 可以从这里开始 |
-| --- | --- |
-| 哈希表 | [1. 两数之和](0001-Two-Sum/README.md) → [242. 有效的字母异位词](0242-Valid%20Anagram/README.md) → [49. 字母异位词分组](0049-Group-Anagrams/README.md) → [128. 最长连续序列](0128-Longest-Consecutive-Sequence/README.md) |
-| 双指针与原地修改 | [26. 删除有序数组中的重复项](0026-Remove-Duplicates/README.md) → [27. 移除元素](0027-Remove-Element/README.md) |
-| 栈与二分查找 | [20. 有效的括号](0020-Valid-Parentheses/README.md)练栈，[35. 搜索插入位置](0035-Search-Insert-Position/README.md)练二分查找。 |
+[按题号查找](#leetcode-题目索引) · [看排序图解](#排序算法) · [看数据结构示例](#数据结构)
 
 ## LeetCode 题目索引
 
@@ -40,12 +32,7 @@
 - **比较排序** · [冒泡](Algorithm-Sort/BubbleSort/README.md)、[选择](Algorithm-Sort/SelectionSort/README.md)、[插入](Algorithm-Sort/InsertionSort/README.md)、[希尔](Algorithm-Sort/ShellSort/README.md)、[快速](Algorithm-Sort/QuickSort/README.md)、[归并](Algorithm-Sort/MergeSort/README.md)
 - **非比较排序** · [桶排序](Algorithm-Sort/BucketSort/README.md)、[基数排序](Algorithm-Sort/RadixSort/README.md)
 
-<details>
-<summary>展开排序算法总览图</summary>
-
 ![常见排序算法总览](Algorithm-Sort/sort.png)
-
-</details>
 
 ## 数据结构
 
