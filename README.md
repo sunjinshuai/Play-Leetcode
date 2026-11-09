@@ -21,6 +21,7 @@ LeetCode 刷题笔记与常见算法示例。题目目录收录题意、示例�
 | 0049 | [字母异位词分组](0049-Group-Anagrams/README.md) | 中等 | Java、Swift、Dart 源码及题解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
+| 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
 | 0242 | [有效的字母异位词](0242-Valid%20Anagram/README.md) | 简单 | 题解内含 Java 示例 |
 | 0509 | [斐波那契数](0509-Fibonacci-Number/README.md) | 简单 | Java 源码 |
 
