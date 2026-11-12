@@ -12,6 +12,7 @@
 | --- | --- | --- | --- |
 | 0001 | [两数之和](0001-Two-Sum/README.md) | 简单 | Java、Swift、Dart 源码及题解 |
 | 0002 | [两数相加](0002-Add-Two-Numbers/README.md) | 中等 | 题目与示例 |
+| 0003 | [无重复字符的最长子串](0003-Longest-Substring-Without-Repeating-Characters/README.md) | 中等 | Java、Swift 滑动窗口源码及题解 |
 | 0007 | [整数反转](0007-Reverse-Integer/README.md) | 中等 | Java 源码 |
 | 0011 | [盛最多水的容器](0011-Container-With-Most-Water/README.md) | 中等 | Java、Swift 源码及题解 |
 | 0015 | [三数之和](0015-3Sum/README.md) | 中等 | 题解内含 Swift 和 Java 哈希表示例 |
