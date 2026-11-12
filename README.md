@@ -21,6 +21,7 @@
 | 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 源码、题解 |
 | 0028 | [找出字符串中第一个匹配项的下标](0028-Implement-strStr/README.md) | 简单 | Java 源码 |
 | 0035 | [搜索插入位置](0035-Search-Insert-Position/README.md) | 简单 | Java 源码、题解 |
+| 0042 | [接雨水](0042-Trapping-Rain-Water/README.md) | 困难 | Swift 源码及题解 |
 | 0049 | [字母异位词分组](0049-Group-Anagrams/README.md) | 中等 | Java、Swift、Dart 源码及题解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
