@@ -11,7 +11,7 @@
 | 题号 | 题目 | 难度 | 语言与内容 |
 | --- | --- | --- | --- |
 | 0001 | [两数之和](0001-Two-Sum/README.md) | 简单 | Java、Swift、Dart 源码及题解 |
-| 0002 | [两数相加](0002-Add-Two-Numbers/README.md) | 中等 | 题目与示例 |
+| 0002 | [两数相加](0002-Add-Two-Numbers/README.md) | 中等 | Java 原地两遍遍历、进位与链表拼接讲解 |
 | 0003 | [无重复字符的最长子串](0003-Longest-Substring-Without-Repeating-Characters/README.md) | 中等 | Java、Swift 滑动窗口源码及题解 |
 | 0007 | [整数反转](0007-Reverse-Integer/README.md) | 中等 | Java 源码 |
 | 0011 | [盛最多水的容器](0011-Container-With-Most-Water/README.md) | 中等 | Java、Swift 源码及题解 |
