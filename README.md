@@ -27,6 +27,7 @@
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
 | 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
+| 0142 | [环形链表 II](0142-Linked-List-Cycle-II/README.md) | 中等 | Java 哈希集合源码及题解 |
 | 0146 | [LRU 缓存](0146-LRU-Cache/README.md) | 中等 | Java 哈希表与双向链表源码及题解 |
 | 0160 | [相交链表](0160-Intersection-of-Two-Linked-Lists/README.md) | 简单 | Java、Swift 哈希集合源码及题解 |
 | 0206 | [反转链表](0206-Reverse-Linked-List/README.md) | 简单 | Swift 源码及题解 |
@@ -49,7 +50,7 @@
 | --- | --- |
 | 数组 | [Objective-C 数组示例](Array/Array/Array.xcodeproj)、[删除有序数组中的重复项](Array/RemoveDuplicates/removeDuplicates.md) |
 | 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md) |
-| 链表 | [LRU 缓存](0146-LRU-Cache/README.md)、[两数相加](0002-Add-Two-Numbers/README.md)、[相交链表](0160-Intersection-of-Two-Linked-Lists/README.md)、[反转链表](0206-Reverse-Linked-List/README.md) |
+| 链表 | [LRU 缓存](0146-LRU-Cache/README.md)、[两数相加](0002-Add-Two-Numbers/README.md)、[环形链表 II](0142-Linked-List-Cycle-II/README.md)、[相交链表](0160-Intersection-of-Two-Linked-Lists/README.md)、[反转链表](0206-Reverse-Linked-List/README.md) |
 | 哈希表 | [LRU 缓存](0146-LRU-Cache/README.md)、[两数之和](0001-Two-Sum/README.md)、[三数之和](0015-3Sum/README.md)、[字母异位词分组](0049-Group-Anagrams/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
 
 <details>
