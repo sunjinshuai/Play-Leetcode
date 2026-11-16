@@ -21,7 +21,7 @@
 | 0021 | [合并两个有序链表](0021-Merge-Two-Sorted-Lists/README.md) | 简单 | Java、Swift 源码及题解 |
 | 0024 | [两两交换链表中的节点](0024-Swap-Nodes-in-Pairs/README.md) | 中等 | Java 迭代、递归源码及虚拟头节点与引用讲解 |
 | 0026 | [删除有序数组中的重复项](0026-Remove-Duplicates/README.md) | 简单 | Java 源码、题解 |
-| 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 源码、题解 |
+| 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 快慢双指针、有效前缀与原地覆盖讲解 |
 | 0028 | [找出字符串中第一个匹配项的下标](0028-Implement-strStr/README.md) | 简单 | Java 源码 |
 | 0035 | [搜索插入位置](0035-Search-Insert-Position/README.md) | 简单 | Java 源码、题解 |
 | 0042 | [接雨水](0042-Trapping-Rain-Water/README.md) | 困难 | Swift 源码及题解 |
