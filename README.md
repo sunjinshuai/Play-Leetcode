@@ -26,6 +26,7 @@
 | 0035 | [搜索插入位置](0035-Search-Insert-Position/README.md) | 简单 | Java 源码、题解 |
 | 0042 | [接雨水](0042-Trapping-Rain-Water/README.md) | 困难 | Swift 源码及题解 |
 | 0049 | [字母异位词分组](0049-Group-Anagrams/README.md) | 中等 | Java、Swift、Dart 源码及题解 |
+| 0053 | [最大子数组和](0053-Maximum-Subarray/README.md) | 中等 | Java Kadane 源码、全负数边界与动态规划讲解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
 | 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
