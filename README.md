@@ -36,6 +36,7 @@
 | 0148 | [排序链表](0148-Sort-List/README.md) | 中等 | Java List 排序源码及题解 |
 | 0160 | [相交链表](0160-Intersection-of-Two-Linked-Lists/README.md) | 简单 | Java、Swift 哈希集合源码及题解 |
 | 0206 | [反转链表](0206-Reverse-Linked-List/README.md) | 简单 | Swift 源码及题解 |
+| 0209 | [长度最小的子数组](0209-Minimum-Size-Subarray-Sum/README.md) | 中等 | Java 滑动窗口源码、窗口收缩与前缀和二分思路 |
 | 0234 | [回文链表](0234-Palindrome-Linked-List/README.md) | 简单 | Swift 数组、快慢指针与原地反转源码及题解 |
 | 0242 | [有效的字母异位词](0242-Valid%20Anagram/README.md) | 简单 | 题解内含 Java 示例 |
 | 0283 | [移动零](0283-Move-Zeroes/README.md) | 简单 | Java 源码、题解 |
