@@ -19,6 +19,7 @@
 | 0019 | [删除链表的倒数第 N 个结点](0019-Remove-Nth-Node-From-End-of-List/README.md) | 中等 | Java 双指针源码、固定间距与虚拟头节点讲解 |
 | 0020 | [有效的括号](0020-Valid-Parentheses/README.md) | 简单 | Java 和 Objective-C 源码、题解 |
 | 0021 | [合并两个有序链表](0021-Merge-Two-Sorted-Lists/README.md) | 简单 | Java、Swift 源码及题解 |
+| 0024 | [两两交换链表中的节点](0024-Swap-Nodes-in-Pairs/README.md) | 中等 | Java 迭代、递归源码及虚拟头节点与引用讲解 |
 | 0026 | [删除有序数组中的重复项](0026-Remove-Duplicates/README.md) | 简单 | Java 源码、题解 |
 | 0027 | [移除元素](0027-Remove-Element/README.md) | 简单 | Java 源码、题解 |
 | 0028 | [找出字符串中第一个匹配项的下标](0028-Implement-strStr/README.md) | 简单 | Java 源码 |
@@ -53,7 +54,7 @@
 | --- | --- |
 | 数组 | [Objective-C 数组示例](Array/Array/Array.xcodeproj)、[删除有序数组中的重复项](Array/RemoveDuplicates/removeDuplicates.md) |
 | 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md) |
-| 链表 | [删除链表的倒数第 N 个结点](0019-Remove-Nth-Node-From-End-of-List/README.md)、[LRU 缓存](0146-LRU-Cache/README.md)、[两数相加](0002-Add-Two-Numbers/README.md)、[环形链表 II](0142-Linked-List-Cycle-II/README.md)、[排序链表](0148-Sort-List/README.md)、[相交链表](0160-Intersection-of-Two-Linked-Lists/README.md)、[反转链表](0206-Reverse-Linked-List/README.md)、[回文链表](0234-Palindrome-Linked-List/README.md) |
+| 链表 | [两两交换链表中的节点](0024-Swap-Nodes-in-Pairs/README.md)、[删除链表的倒数第 N 个结点](0019-Remove-Nth-Node-From-End-of-List/README.md)、[LRU 缓存](0146-LRU-Cache/README.md)、[两数相加](0002-Add-Two-Numbers/README.md)、[环形链表 II](0142-Linked-List-Cycle-II/README.md)、[排序链表](0148-Sort-List/README.md)、[相交链表](0160-Intersection-of-Two-Linked-Lists/README.md)、[反转链表](0206-Reverse-Linked-List/README.md)、[回文链表](0234-Palindrome-Linked-List/README.md) |
 | 哈希表 | [LRU 缓存](0146-LRU-Cache/README.md)、[两数之和](0001-Two-Sum/README.md)、[三数之和](0015-3Sum/README.md)、[字母异位词分组](0049-Group-Anagrams/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
 
 <details>
