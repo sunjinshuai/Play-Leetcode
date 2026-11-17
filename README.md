@@ -36,6 +36,7 @@
 | 0142 | [环形链表 II](0142-Linked-List-Cycle-II/README.md) | 中等 | Java 哈希集合、快慢指针源码及推导 |
 | 0146 | [LRU 缓存](0146-LRU-Cache/README.md) | 中等 | Java 哈希表与双向链表源码及题解 |
 | 0148 | [排序链表](0148-Sort-List/README.md) | 中等 | Java List 排序源码及题解 |
+| 0155 | [最小栈](0155-Min-Stack/README.md) | 中等 | Java 双栈源码、每层最小值与重复元素处理讲解 |
 | 0160 | [相交链表](0160-Intersection-of-Two-Linked-Lists/README.md) | 简单 | Java、Swift 哈希集合源码及题解 |
 | 0206 | [反转链表](0206-Reverse-Linked-List/README.md) | 简单 | Swift 源码及题解 |
 | 0209 | [长度最小的子数组](0209-Minimum-Size-Subarray-Sum/README.md) | 中等 | Java 滑动窗口源码、窗口收缩与前缀和二分思路 |
@@ -60,7 +61,7 @@
 | 主题 | 仓库内容 |
 | --- | --- |
 | 数组 | [Objective-C 数组示例](Array/Array/Array.xcodeproj)、[删除有序数组中的重复项](Array/RemoveDuplicates/removeDuplicates.md) |
-| 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md) |
+| 栈 | [Objective-C 栈示例](Stack/OC_Stack/Stack.xcodeproj)、[有效的括号](0020-Valid-Parentheses/README.md)、[最小栈](0155-Min-Stack/README.md) |
 | 链表 | [两两交换链表中的节点](0024-Swap-Nodes-in-Pairs/README.md)、[删除链表的倒数第 N 个结点](0019-Remove-Nth-Node-From-End-of-List/README.md)、[LRU 缓存](0146-LRU-Cache/README.md)、[两数相加](0002-Add-Two-Numbers/README.md)、[环形链表 II](0142-Linked-List-Cycle-II/README.md)、[排序链表](0148-Sort-List/README.md)、[相交链表](0160-Intersection-of-Two-Linked-Lists/README.md)、[反转链表](0206-Reverse-Linked-List/README.md)、[回文链表](0234-Palindrome-Linked-List/README.md) |
 | 哈希表 | [LRU 缓存](0146-LRU-Cache/README.md)、[两数之和](0001-Two-Sum/README.md)、[三数之和](0015-3Sum/README.md)、[字母异位词分组](0049-Group-Anagrams/README.md)、[有效的字母异位词](0242-Valid%20Anagram/README.md) |
 
