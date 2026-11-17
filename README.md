@@ -27,6 +27,7 @@
 | 0042 | [接雨水](0042-Trapping-Rain-Water/README.md) | 困难 | Swift 源码及题解 |
 | 0049 | [字母异位词分组](0049-Group-Anagrams/README.md) | 中等 | Java、Swift、Dart 源码及题解 |
 | 0053 | [最大子数组和](0053-Maximum-Subarray/README.md) | 中等 | Java Kadane 源码、全负数边界与动态规划讲解 |
+| 0054 | [螺旋矩阵](0054-Spiral-Matrix/README.md) | 中等 | Java 四边界模拟、逐步讲解与[交互演示](0054-Spiral-Matrix/interactive.html) |
 | 0056 | [合并区间](0056-Merge-Intervals/README.md) | 中等 | Java 排序扫描源码、区间合并与边界讲解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0059 | [螺旋矩阵 II](0059-Spiral-Matrix-II/README.md) | 中等 | Java 模拟源码、四边界收缩与中心格处理讲解 |
