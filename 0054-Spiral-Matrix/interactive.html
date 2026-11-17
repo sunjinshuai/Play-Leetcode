@@ -1890,6 +1890,14 @@ html&gt;body{padding:0}&lt;/style&gt;
 })();
 &lt;/script&gt;
 &lt;div id=&quot;spiral-walk&quot;&gt;
+&lt;div class=&quot;viz-controls&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;sw-example&quot;&gt;矩阵示例&lt;select class=&quot;form-select&quot; id=&quot;sw-example&quot;&gt;
+&lt;option value=&quot;square&quot;&gt;正方形 · 3 × 3&lt;/option&gt;
+&lt;option value=&quot;wide&quot;&gt;横向长方形 · 3 × 4&lt;/option&gt;
+&lt;option value=&quot;tall&quot;&gt;纵向长方形 · 4 × 3&lt;/option&gt;
+&lt;option value=&quot;row&quot;&gt;单行 · 1 × 4&lt;/option&gt;
+&lt;option value=&quot;column&quot;&gt;单列 · 4 × 1&lt;/option&gt;
+&lt;option value=&quot;single&quot;&gt;单个元素 · 1 × 1&lt;/option&gt;
+&lt;/select&gt;&lt;/label&gt;&lt;/div&gt;
   &lt;div class=&quot;viz-controls&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;sw-prev&quot;&gt;上一步&lt;/button&gt;&lt;button class=&quot;btn btn-primary&quot; id=&quot;sw-next&quot;&gt;下一步&lt;/button&gt;&lt;button class=&quot;btn&quot; id=&quot;sw-play&quot;&gt;自动播放&lt;/button&gt;&lt;span id=&quot;sw-step&quot; class=&quot;text-small tabular-nums&quot;&gt;&lt;/span&gt;&lt;/div&gt;
   &lt;div id=&quot;sw-bounds&quot; class=&quot;tabular-nums text-small&quot;&gt;&lt;/div&gt;
   &lt;div id=&quot;sw-grid&quot; role=&quot;img&quot; aria-label=&quot;三行三列矩阵，带行列下标和当前读取位置&quot;&gt;&lt;/div&gt;
@@ -1911,35 +1919,163 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/style&gt;
 &lt;script&gt;
 (() =&gt; {
-const root=document.getElementById(&#x27;spiral-walk&#x27;);
-const el=id=&gt;root.querySelector(&#x27;#sw-&#x27;+id);
-const steps=[];let output=[];let visited=[];
-const snippets={top:&#x27;for (int column = left; column &lt;= right; column++) {\n    order.add(matrix[top][column]);\n}&#x27;,right:&#x27;for (int row = top + 1; row &lt;= bottom; row++) {\n    order.add(matrix[row][right]);\n}&#x27;,bottom:&#x27;if (left &lt; right &amp;&amp; top &lt; bottom)\n    for (int column = right - 1; column &gt; left; column--) {\n        order.add(matrix[bottom][column]);\n    }&#x27;,left:&#x27;if (left &lt; right &amp;&amp; top &lt; bottom)\n    for (int row = bottom; row &gt; top; row--) {\n        order.add(matrix[row][left]);\n    }&#x27;};
-let left=0,right=2,top=0,bottom=2;
-function push(detail,code,r=null,c=null){steps.push({left,right,top,bottom,detail,code,r,c,output:[...output],visited:[...visited]});}
-function visit(r,c,side){const value=r*3+c+1;output.push(value);visited.push(r*3+c);const names={top:&#x27;上边 →&#x27;,right:&#x27;右边 ↓&#x27;,bottom:&#x27;下边 ←&#x27;,left:&#x27;左边 ↑&#x27;};push(names[side]+&#x27;  matrix[&#x27;+r+&#x27;][&#x27;+c+&#x27;] = &#x27;+value+&#x27;；&#x27;+(side===&#x27;right&#x27;?&#x27;right 固定为 &#x27;+right+&#x27;，row = &#x27;+r:side===&#x27;top&#x27;?&#x27;top 固定为 &#x27;+top+&#x27;，column = &#x27;+c:side===&#x27;bottom&#x27;?&#x27;bottom 固定为 &#x27;+bottom+&#x27;，column = &#x27;+c:&#x27;left 固定为 &#x27;+left+&#x27;，row = &#x27;+r),snippets[side],r,c);}
-push(&#x27;起点：左上角。行、列下标都从 0 开始。&#x27;,&#x27;while (left &lt;= right &amp;&amp; top &lt;= bottom)&#x27;);
-while(left&lt;=right&amp;&amp;top&lt;=bottom){
-for(let c=left;c&lt;=right;c++)visit(top,c,&#x27;top&#x27;);
-push(&#x27;右列起点：row = top + 1 = &#x27;+(top+1)+&#x27;；跳过已读取的右上角。&#x27;,snippets.right);
-for(let r=top+1;r&lt;=bottom;r++)visit(r,right,&#x27;right&#x27;);
-if(left&lt;right&amp;&amp;top&lt;bottom){for(let c=right-1;c&gt;left;c--)visit(bottom,c,&#x27;bottom&#x27;);for(let r=bottom;r&gt;top;r--)visit(r,left,&#x27;left&#x27;);}
-else push(&#x27;只剩一行或一列：跳过下边、左边，避免重复。&#x27;,&#x27;if (left &lt; right &amp;&amp; top &lt; bottom) // false&#x27;);
-left++;right--;top++;bottom--;
-push(left&lt;=right&amp;&amp;top&lt;=bottom?&#x27;四条边向内缩一格，进入下一圈。&#x27;:&#x27;边界交错，没有剩余格子。&#x27;,&#x27;left++;\nright--;\ntop++;\nbottom--;&#x27;);
-}
-push(&#x27;遍历完成：每个元素读取一次。&#x27;,&#x27;return order;&#x27;);
-let index=0,timer=null;
-function stop(){clearInterval(timer);timer=null;el(&#x27;play&#x27;).textContent=&#x27;自动播放&#x27;;}
-function render(){const s=steps[index];el(&#x27;step&#x27;).textContent=index+&#x27; / &#x27;+(steps.length-1);el(&#x27;bounds&#x27;).textContent=&#x27;top = &#x27;+s.top+&#x27; · bottom = &#x27;+s.bottom+&#x27; · left = &#x27;+s.left+&#x27; · right = &#x27;+s.right;el(&#x27;detail&#x27;).textContent=s.detail;el(&#x27;code&#x27;).textContent=s.code;el(&#x27;result&#x27;).textContent=&#x27;order = [&#x27;+s.output.join(&#x27;, &#x27;)+&#x27;]&#x27;;el(&#x27;prev&#x27;).disabled=index===0;el(&#x27;next&#x27;).disabled=index===steps.length-1;el(&#x27;play&#x27;).disabled=index===steps.length-1;el(&#x27;grid&#x27;).replaceChildren();
-const axis=text=&gt;{const d=document.createElement(&#x27;div&#x27;);d.className=&#x27;sw-axis text-small&#x27;;d.textContent=text;el(&#x27;grid&#x27;).append(d);};axis(&#x27;行 / 列&#x27;);for(let c=0;c&lt;3;c++)axis(&#x27;列 &#x27;+c);
-for(let r=0;r&lt;3;r++){axis(&#x27;行 &#x27;+r);for(let c=0;c&lt;3;c++){const d=document.createElement(&#x27;div&#x27;);const active=s.r===r&amp;&amp;s.c===c;const done=s.visited.includes(r*3+c);d.className=&#x27;sw-cell tabular-nums&#x27;+(done?&#x27; done&#x27;:&#x27;&#x27;)+(active?&#x27; current&#x27;:&#x27;&#x27;)+(r&lt;s.top||r&gt;s.bottom||c&lt;s.left||c&gt;s.right?&#x27; outside&#x27;:&#x27;&#x27;);d.textContent=r*3+c+1;const mark=document.createElement(&#x27;span&#x27;);mark.className=&#x27;sw-mark text-small&#x27;;mark.textContent=active?&#x27;当前&#x27;:done?&#x27;✓&#x27;:&#x27;&#x27;;d.append(mark);el(&#x27;grid&#x27;).append(d);}}
-}
-function save(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{step:index,detail:steps[index].detail},privateContent:{index}}).catch(()=&gt;{});}
-function restore(state){const value=state?.privateContent?.index;if(Number.isInteger(value))index=Math.max(0,Math.min(value,steps.length-1));render();}
-el(&#x27;prev&#x27;).onclick=()=&gt;{stop();index=Math.max(0,index-1);render();save();};el(&#x27;next&#x27;).onclick=()=&gt;{stop();index=Math.min(steps.length-1,index+1);render();save();};el(&#x27;play&#x27;).onclick=()=&gt;{if(timer){stop();return;}el(&#x27;play&#x27;).textContent=&#x27;暂停&#x27;;timer=setInterval(()=&gt;{index++;if(index&gt;=steps.length-1)stop();render();save();},1500);};
-window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);}});
-restore(window.openai?.widgetState);
+  const root = document.getElementById(&#x27;spiral-walk&#x27;);
+  const el = id =&gt; root.querySelector(&#x27;#sw-&#x27; + id);
+  const examples = {
+    square: {rows: 3, columns: 3},
+    wide: {rows: 3, columns: 4},
+    tall: {rows: 4, columns: 3},
+    row: {rows: 1, columns: 4},
+    column: {rows: 4, columns: 1},
+    single: {rows: 1, columns: 1}
+  };
+  const snippets = {
+    top: &#x27;for (int column = left; column &lt;= right; column++) {\n    order.add(matrix[top][column]);\n}&#x27;,
+    right: &#x27;for (int row = top + 1; row &lt;= bottom; row++) {\n    order.add(matrix[row][right]);\n}&#x27;,
+    bottom: &#x27;if (left &lt; right &amp;&amp; top &lt; bottom)\n    for (int column = right - 1; column &gt; left; column--) {\n        order.add(matrix[bottom][column]);\n    }&#x27;,
+    left: &#x27;if (left &lt; right &amp;&amp; top &lt; bottom)\n    for (int row = bottom; row &gt; top; row--) {\n        order.add(matrix[row][left]);\n    }&#x27;
+  };
+
+  function buildSteps(rows, columns) {
+    const steps = [], output = [], visited = [];
+    let left = 0, right = columns - 1, top = 0, bottom = rows - 1;
+    function push(detail, code, r = null, c = null) {
+      steps.push({left, right, top, bottom, detail, code, r, c,
+        output: [...output], visited: [...visited]});
+    }
+    function visit(r, c, side) {
+      const value = r * columns + c + 1;
+      output.push(value);
+      visited.push(r * columns + c);
+      const names = {top: &#x27;上边 →&#x27;, right: &#x27;右边 ↓&#x27;, bottom: &#x27;下边 ←&#x27;, left: &#x27;左边 ↑&#x27;};
+      const coordinate = side === &#x27;right&#x27; ? `right 固定为 ${right}，row = ${r}`
+        : side === &#x27;top&#x27; ? `top 固定为 ${top}，column = ${c}`
+        : side === &#x27;bottom&#x27; ? `bottom 固定为 ${bottom}，column = ${c}`
+        : `left 固定为 ${left}，row = ${r}`;
+      push(`${names[side]}  matrix[${r}][${c}] = ${value}；${coordinate}`, snippets[side], r, c);
+    }
+    push(`${rows} 行 × ${columns} 列；从左上角开始，下标从 0 开始。`,
+      &#x27;while (left &lt;= right &amp;&amp; top &lt;= bottom)&#x27;);
+    while (left &lt;= right &amp;&amp; top &lt;= bottom) {
+      for (let c = left; c &lt;= right; c++) visit(top, c, &#x27;top&#x27;);
+      push(top + 1 &gt; bottom
+        ? `右边跳过：row = top + 1 = ${top + 1} &gt; bottom = ${bottom}，这一行已由上边读完。`
+        : `右列起点：row = top + 1 = ${top + 1}；跳过已读取的右上角。`, snippets.right);
+      for (let r = top + 1; r &lt;= bottom; r++) visit(r, right, &#x27;right&#x27;);
+      if (left &lt; right &amp;&amp; top &lt; bottom) {
+        if (right - 1 === left) {
+          push(&#x27;只有两列：下边没有中间格子，左下角留给左边读取。&#x27;, snippets.bottom);
+        }
+        for (let c = right - 1; c &gt; left; c--) visit(bottom, c, &#x27;bottom&#x27;);
+        for (let r = bottom; r &gt; top; r--) visit(r, left, &#x27;left&#x27;);
+      } else {
+        const reason = left === right &amp;&amp; top === bottom ? &#x27;只剩一个格子，上边已读完&#x27;
+          : top === bottom ? &#x27;只剩一行，上边已读完&#x27; : &#x27;只剩一列，上边和右边已读完&#x27;;
+        push(`${reason}；跳过下边、左边，避免重复。`,
+          &#x27;if (left &lt; right &amp;&amp; top &lt; bottom) // false&#x27;);
+      }
+      left++; right--; top++; bottom--;
+      push(left &lt;= right &amp;&amp; top &lt;= bottom ? &#x27;四条边向内缩一格，进入下一圈。&#x27;
+        : &#x27;边界交错，没有剩余格子。&#x27;, &#x27;left++;\nright--;\ntop++;\nbottom--;&#x27;);
+    }
+    push(&#x27;遍历完成：每个元素读取一次。&#x27;, &#x27;return order;&#x27;);
+    return steps;
+  }
+
+  let example = &#x27;square&#x27;;
+  let steps = buildSteps(3, 3);
+  let index = 0, timer = null;
+  function stop() {
+    clearInterval(timer);
+    timer = null;
+    el(&#x27;play&#x27;).textContent = &#x27;自动播放&#x27;;
+  }
+  function render() {
+    const s = steps[index];
+    const {rows, columns} = examples[example];
+    el(&#x27;example&#x27;).value = example;
+    el(&#x27;step&#x27;).textContent = `${index} / ${steps.length - 1}`;
+    el(&#x27;bounds&#x27;).textContent = `top = ${s.top} · bottom = ${s.bottom} · left = ${s.left} · right = ${s.right}`;
+    el(&#x27;detail&#x27;).textContent = s.detail;
+    el(&#x27;code&#x27;).textContent = s.code;
+    el(&#x27;result&#x27;).textContent = `order = [${s.output.join(&#x27;, &#x27;)}]`;
+    el(&#x27;prev&#x27;).disabled = index === 0;
+    el(&#x27;next&#x27;).disabled = index === steps.length - 1;
+    el(&#x27;play&#x27;).disabled = index === steps.length - 1;
+    const grid = el(&#x27;grid&#x27;);
+    grid.style.gridTemplateColumns = `3.5em repeat(${columns}, minmax(0, 1fr))`;
+    grid.style.maxWidth = `${70 + columns * 90}px`;
+    grid.setAttribute(&#x27;aria-label&#x27;, `${rows} 行 ${columns} 列矩阵；` +
+      (s.r === null ? s.detail : `当前读取第 ${s.r} 行、第 ${s.c} 列，值 ${s.r * columns + s.c + 1}，下标从 0 开始`));
+    grid.replaceChildren();
+    function axis(text) {
+      const d = document.createElement(&#x27;div&#x27;);
+      d.className = &#x27;sw-axis text-small&#x27;;
+      d.textContent = text;
+      grid.append(d);
+    }
+    axis(&#x27;行 / 列&#x27;);
+    for (let c = 0; c &lt; columns; c++) axis(&#x27;列 &#x27; + c);
+    for (let r = 0; r &lt; rows; r++) {
+      axis(&#x27;行 &#x27; + r);
+      for (let c = 0; c &lt; columns; c++) {
+        const d = document.createElement(&#x27;div&#x27;);
+        const active = s.r === r &amp;&amp; s.c === c;
+        const done = s.visited.includes(r * columns + c);
+        d.className = &#x27;sw-cell tabular-nums&#x27; + (done ? &#x27; done&#x27; : &#x27;&#x27;) +
+          (active ? &#x27; current&#x27; : &#x27;&#x27;) +
+          (r &lt; s.top || r &gt; s.bottom || c &lt; s.left || c &gt; s.right ? &#x27; outside&#x27; : &#x27;&#x27;);
+        d.textContent = r * columns + c + 1;
+        const mark = document.createElement(&#x27;span&#x27;);
+        mark.className = &#x27;sw-mark text-small&#x27;;
+        mark.textContent = active ? &#x27;当前&#x27; : done ? &#x27;✓&#x27; : &#x27;&#x27;;
+        d.append(mark);
+        grid.append(d);
+      }
+    }
+  }
+  function save() {
+    if (window.openai?.setWidgetState) {
+      window.openai.setWidgetState({modelContent: {example, step: index, detail: steps[index].detail},
+        privateContent: {example, index}}).catch(() =&gt; {});
+    }
+  }
+  function restore(state) {
+    const saved = state?.privateContent;
+    const selected = Object.hasOwn(examples, saved?.example) ? saved.example : &#x27;square&#x27;;
+    if (selected !== example) {
+      stop();
+      example = selected;
+      const {rows, columns} = examples[example];
+      steps = buildSteps(rows, columns);
+    }
+    index = Number.isInteger(saved?.index) ? Math.max(0, Math.min(saved.index, steps.length - 1)) : 0;
+    render();
+  }
+  el(&#x27;example&#x27;).onchange = () =&gt; {
+    stop();
+    example = el(&#x27;example&#x27;).value;
+    const {rows, columns} = examples[example];
+    steps = buildSteps(rows, columns);
+    index = 0;
+    render();
+    save();
+  };
+  el(&#x27;prev&#x27;).onclick = () =&gt; {stop(); index = Math.max(0, index - 1); render(); save();};
+  el(&#x27;next&#x27;).onclick = () =&gt; {stop(); index = Math.min(steps.length - 1, index + 1); render(); save();};
+  el(&#x27;play&#x27;).onclick = () =&gt; {
+    if (timer !== null) {stop(); return;}
+    el(&#x27;play&#x27;).textContent = &#x27;暂停&#x27;;
+    timer = setInterval(() =&gt; {
+      index++;
+      if (index &gt;= steps.length - 1) stop();
+      render(); save();
+    }, 1500);
+  };
+  window.addEventListener(&#x27;openai:set_globals&#x27;, event =&gt; {
+    if (event.detail?.globals?.widgetState) restore(event.detail.globals.widgetState);
+  });
+  restore(window.openai?.widgetState);
 })();
 &lt;/script&gt;
 
