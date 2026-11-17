@@ -29,6 +29,7 @@
 | 0053 | [最大子数组和](0053-Maximum-Subarray/README.md) | 中等 | Java Kadane 源码、全负数边界与动态规划讲解 |
 | 0056 | [合并区间](0056-Merge-Intervals/README.md) | 中等 | Java 排序扫描源码、区间合并与边界讲解 |
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
+| 0059 | [螺旋矩阵 II](0059-Spiral-Matrix-II/README.md) | 中等 | Java 模拟源码、四边界收缩与中心格处理讲解 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
 | 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
 | 0142 | [环形链表 II](0142-Linked-List-Cycle-II/README.md) | 中等 | Java 哈希集合、快慢指针源码及推导 |
