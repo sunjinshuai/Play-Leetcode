@@ -2,13 +2,15 @@
 
 给定一个 `m × n` 的矩阵，按照顺时针螺旋顺序返回所有元素。
 
-[力扣题目](https://leetcode.cn/problems/spiral-matrix/description/) · [Java 源码](Java/Solution.java) · [交互演示](interactive.html)
+[力扣题目](https://leetcode.cn/problems/spiral-matrix/description/) · [Java 源码](Java/Solution.java) · [在线交互演示](https://sunjinshuai.github.io/Play-Leetcode/0054-Spiral-Matrix/interactive.html)
 
 本题是读取已有矩阵，允许长方形；[59. 螺旋矩阵 II](../0059-Spiral-Matrix-II/README.md) 是生成一个正方形矩阵，两题不要混淆。
 
 ## 交互演示
 
-下载仓库后，用浏览器打开本目录的 `interactive.html`。GitHub 文件页面只展示源码，不会直接运行交互效果；也可以在该文件页面下载原始文件，再用浏览器打开。
+点击[在线打开交互演示](https://sunjinshuai.github.io/Play-Leetcode/0054-Spiral-Matrix/interactive.html)即可使用，无需下载。也可以下载仓库，用浏览器打开本目录的 [interactive.html](interactive.html)。
+
+在线演示由 GitHub Pages 从 `master` 分支根目录发布，后续更新该 HTML 并推送后会自动部署。根目录的 `.nojekyll` 用于直接发布静态文件。
 
 演示使用下方的 `3 × 3` 示例，支持「上一步」「下一步」「自动播放 / 暂停」。每一步同步显示当前格子、行列下标、四个边界、对应循环和结果列表。带“当前”的格子是正在读取的位置，带 ✓ 的格子已经读取。
 
