@@ -17,7 +17,7 @@
 | 0011 | [盛最多水的容器](0011-Container-With-Most-Water/README.md) | 中等 | Java、Swift 源码及题解 |
 | 0015 | [三数之和](0015-3Sum/README.md) | 中等 | 题解内含 Swift 和 Java 哈希表示例 |
 | 0019 | [删除链表的倒数第 N 个结点](0019-Remove-Nth-Node-From-End-of-List/README.md) | 中等 | Java 双指针源码、固定间距与虚拟头节点讲解 |
-| 0020 | [有效的括号](0020-Valid-Parentheses/README.md) | 简单 | Java 和 Objective-C 源码、题解 |
+| 0020 | [有效的括号](0020-Valid-Parentheses/README.md) | 简单 | Java 栈解法、括号匹配与边界讲解，Objective-C 源码 |
 | 0021 | [合并两个有序链表](0021-Merge-Two-Sorted-Lists/README.md) | 简单 | Java、Swift 源码及题解 |
 | 0024 | [两两交换链表中的节点](0024-Swap-Nodes-in-Pairs/README.md) | 中等 | Java 迭代、递归源码及虚拟头节点与引用讲解 |
 | 0026 | [删除有序数组中的重复项](0026-Remove-Duplicates/README.md) | 简单 | Java 源码、题解 |
