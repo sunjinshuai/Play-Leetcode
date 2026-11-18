@@ -33,6 +33,7 @@
 | 0059 | [螺旋矩阵 II](0059-Spiral-Matrix-II/README.md) | 中等 | Java 模拟源码、四边界收缩与中心格处理讲解 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
 | 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
+| 0136 | [只出现一次的数字](0136-Single-Number/README.md) | 简单 | Java 哈希集合、异或源码及逐位运算与成对抵消原理 |
 | 0142 | [环形链表 II](0142-Linked-List-Cycle-II/README.md) | 中等 | Java 哈希集合、快慢指针源码及推导 |
 | 0146 | [LRU 缓存](0146-LRU-Cache/README.md) | 中等 | Java 哈希表与双向链表源码及题解 |
 | 0148 | [排序链表](0148-Sort-List/README.md) | 中等 | Java List 排序源码及题解 |
