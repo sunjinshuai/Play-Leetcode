@@ -32,6 +32,7 @@
 | 0058 | [最后一个单词的长度](0058-Length-of-LastWord/README.md) | 简单 | Java 源码 |
 | 0059 | [螺旋矩阵 II](0059-Spiral-Matrix-II/README.md) | 中等 | Java 模拟源码、四边界收缩与中心格处理讲解 |
 | 0066 | [加一](0066-Plus-One/README.md) | 简单 | Java 源码 |
+| 0075 | [颜色分类](0075-Sort-Colors/README.md) | 中等 | Java 计数法源码、统计次数与按序填回讲解 |
 | 0128 | [最长连续序列](0128-Longest-Consecutive-Sequence/README.md) | 中等 | 题解内含 Java 和 Swift 示例 |
 | 0136 | [只出现一次的数字](0136-Single-Number/README.md) | 简单 | Java 哈希集合、异或源码及逐位运算与成对抵消原理 |
 | 0142 | [环形链表 II](0142-Linked-List-Cycle-II/README.md) | 中等 | Java 哈希集合、快慢指针源码及推导 |
