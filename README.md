@@ -47,6 +47,7 @@
 | 0234 | [回文链表](0234-Palindrome-Linked-List/README.md) | 简单 | Swift 数组、快慢指针与原地反转源码及题解 |
 | 0242 | [有效的字母异位词](0242-Valid%20Anagram/README.md) | 简单 | 题解内含 Java 示例 |
 | 0283 | [移动零](0283-Move-Zeroes/README.md) | 简单 | Java 源码、题解 |
+| 0287 | [寻找重复数](0287-Find-the-Duplicate-Number/README.md) | 中等 | Java 快慢指针源码、数组映射链表与环入口推导 |
 | 0509 | [斐波那契数](0509-Fibonacci-Number/README.md) | 简单 | Java 源码 |
 | 0704 | [二分查找](0704-Binary-Search/README.md) | 简单 | Java 源码、左闭右闭区间与边界讲解 |
 | 0977 | [有序数组的平方](0977-Squares-of-a-Sorted-Array/README.md) | 简单 | Java 双指针源码、平方后排序与倒序填充讲解 |
