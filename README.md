@@ -39,6 +39,7 @@
 | 0148 | [排序链表](0148-Sort-List/README.md) | 中等 | Java List 排序源码及题解 |
 | 0155 | [最小栈](0155-Min-Stack/README.md) | 中等 | Java 双栈源码、每层最小值与重复元素处理讲解 |
 | 0160 | [相交链表](0160-Intersection-of-Two-Linked-Lists/README.md) | 简单 | Java、Swift 哈希集合源码及题解 |
+| 0169 | [多数元素](0169-Majority-Element/README.md) | 简单 | Java 投票法、逐位统计源码及异或不适用的原理 |
 | 0206 | [反转链表](0206-Reverse-Linked-List/README.md) | 简单 | Swift 源码及题解 |
 | 0209 | [长度最小的子数组](0209-Minimum-Size-Subarray-Sum/README.md) | 中等 | Java 滑动窗口源码、窗口收缩与前缀和二分思路 |
 | 0215 | [数组中的第 K 个最大元素](0215-Kth-Largest-Element-in-an-Array/README.md) | 中等 | Java 最小堆源码、Top K 维护与堆顶含义讲解 |
